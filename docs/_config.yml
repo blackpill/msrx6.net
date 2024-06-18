@@ -14,7 +14,7 @@ bootswatch_theme: "united" # cerulean, spacelab, united
 # site settings, follows the order used in jekyll-seo-tag plugin
 lang: "en_US"
 title: "MSRX6"
-description: "Smallest Magnetic Stripe Encoder Mini Credit Card Reader Writer."
+description: "Smallest Magnetic Stripe Encoder Mini Credit Card Reader Writer"
 url: https://www.msrx6.net
 baseurl: "/"
 author: TCool ltd.

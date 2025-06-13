@@ -3,6 +3,7 @@ layout: home
 permalink: /
 canonical_url: "https://www.msrx6.net"
 title: "MSR X6 Mini Magnetic Stripe Card Reader Writer"
+description: "Introduction, softwares, purchase notice, and tutorial videos of MSR X6 device."
 excerpt: "Smallest Magnetic Stripe Encoder Mini Credit Card Reader Writer."
 action: true
 action_btn:

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "MSR X6 Tutorial Videos"
+description: "MSR X6 Tutorial Videos: How-to series"
 permalink: /video/
 ---
 

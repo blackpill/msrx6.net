@@ -28,3 +28,7 @@ package-lock.json
 # Editor generated files
 .vscode
 *.swp
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

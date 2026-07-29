@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "MSRX6 Software download"
 permalink: /software/
+title: "MSRX6 Software Download"
+description: "MSRX6 software downloads have moved to the complete Windows, Mac, Android, and iOS download hub."
+robots: "noindex, follow"
+sitemap: false
 ---
 
-**MSRX6/MSRX6BT/MSR605 Software**
-- [Windows 98/2000/ME/XP/Vista/7/8/10 (32&64-bit)][pc_link]
-- [MacOS][mac_link]
-
-[pc_link]: https://deftun.oss-us-east-1.aliyuncs.com/windows.zip
-[mac_link]: https://deftun.oss-us-east-1.aliyuncs.com/mac_msrx_v1.8.zip
+The complete, updated download guide is available at **[MSR X6 Software Download](/software-download/)**.

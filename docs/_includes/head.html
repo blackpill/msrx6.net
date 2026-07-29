@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  {% include head/favicon.html %}
+  {% include head/styles.html %}
+  {% include analytics.html %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | append: site.baseurl | append: '/' | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "publisher": {"@type":"Organization","name":"MSRX6.net"}
+  }
+  </script>
+  {% if page.schema_type %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": {{ page.schema_type | jsonify }},
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.excerpt | strip_html | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "publisher": {"@type":"Organization","name":"MSRX6.net"}
+  }
+  </script>
+  {% endif %}
+</head>

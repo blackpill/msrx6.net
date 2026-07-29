@@ -13,14 +13,15 @@ bootswatch_theme: "united" # cerulean, spacelab, united
 
 # site settings, follows the order used in jekyll-seo-tag plugin
 lang: "en_US"
-description: "Introduction, softwares, purchase notice, and tutorial videos of MSR X6 device."
-url: https://www.msrx6.net
-baseurl: "/"
-author: TCool ltd.
+title: "MSRX6.net"
+description: "Independent MSR X6 resource center for verified software links, Windows and macOS drivers, Bluetooth setup, manuals, and troubleshooting."
+url: "https://www.msrx6.net"
+baseurl: ""
+author: "MSRX6.net Editorial Team"
 #twitter:
 #  username: mani_d2 # should be site's username
 #  card: summary
-logo: assets/images/lwt-logo-wolf-v2.png # PNG is SEO friendly
+logo: "/assets/images/msrx6bt.jpg"
 # use below when there are social links for site
 #social:
 #  name: Mani Kumar
@@ -28,6 +29,11 @@ logo: assets/images/lwt-logo-wolf-v2.png # PNG is SEO friendly
 #    - https://twitter.com/mani_d2
 #    - https://www.linkedin.com/in/manid2/
 #    - https://github.com/manid2
+social:
+  name: "MSRX6.net"
+  links:
+    - "https://twitter.com/RatelKwang"
+
 # site verifications,
 webmaster_verifications:
   google: # 1234
@@ -126,7 +132,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 10
 paginate_path: "/blog/page/:num/"
-timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Etc/UTC" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:

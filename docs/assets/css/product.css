@@ -1,0 +1,19 @@
+/* Local site overrides: keep the theme's typography and orange accent. */
+.feature-link { height: calc(100% - 2rem); color: #332e29; border: 1px solid #ded7ce; overflow: hidden; text-decoration: none; }
+.feature-link:hover { color: #332e29; border-color: #a93d16; text-decoration: none; }
+.feature-link:focus-visible, .product-hero a:focus-visible { outline: 3px solid #a93d16; outline-offset: 4px; }
+.feature-image { background: #f4f1ec; padding: 1rem; }
+.feature-image img { display: block; width: 100%; height: 230px; object-fit: contain; }
+.feature-link h2 { font-size: 1.55rem; margin: 0 0 .6rem; }
+.feature-link .card-body { display: flex; flex-direction: column; align-items: flex-start; }
+.feature-cta { color: #a93d16; font-weight: 700; margin-top: auto; padding-top: 1rem; }
+.feature-link:hover .feature-cta { text-decoration: underline; }
+.product-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2.5rem; padding: 2rem 0; border-bottom: 1px solid #ded7ce; margin-bottom: 2rem; }
+.product-hero figure { margin: 0; padding: 2rem; background: #f4f1ec; }
+.product-hero img { width: 100%; height: auto; display: block; }
+.product-kicker { color: #a93d16; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; }
+.product-hero h2 { font-size: 2rem; }
+.product-buy { display: inline-block; padding: .85rem 1.4rem; background: #a93d16; color: #fff; border-radius: .25rem; font-weight: 700; }
+.product-buy:hover { background: #823012; color: #fff; }
+.product-disclosure { font-size: .875rem; margin-top: 1rem; color: #595149; }
+@media (max-width: 767px) { .product-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1rem; } .feature-image img { height: 200px; } .product-hero figure { padding: 1rem; } }

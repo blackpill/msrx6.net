@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{%- assign action_btn = page.action_btn[0] -%}
+{%- assign dropdown = page.action_btn[1].dropdown -%}
+{%- assign dropdown_items = page.action_btn[2].dropdown_items -%}
+
+<div class="home-page">
+  <!-- home page header -->
+  <section class="home-page-header">
+    <div class="container text-center">
+      <h1 class="animated fadeInDownBig">{{ page.title | default: 'HOME' }}</h1>
+      <p class="lead">{{ page.excerpt | default: 'Excerpt' }}</p>
+      {%- if page.action -%}
+        {%- include home-action-btn.html action_btn=action_btn dropdown=dropdown dropdown_items=dropdown_items -%}
+      {%- endif -%}
+    </div>
+  </section>
+
+  <!-- home page features -->
+  <section class="home-page-features">
+    <div class="container">
+      {% if page.feature_rows %}
+      <div class="row">
+        {% for f_row in page.feature_rows %}
+        <div class="col-md-6 p-0">
+          <a class="feature-link card m-3" href="{{ f_row.url | relative_url }}">
+            {% if f_row.img_path %}
+            <div class="feature-image">
+              <img src="{{ '/assets/images/' | relative_url | append: f_row.img_path }}" alt="{{ f_row.img_alt | escape }}" width="640" height="360" {% if forloop.index > 2 %}loading="lazy"{% endif %}>
+            </div>
+            {% endif %}
+            <div class="card-body">
+              <h2>{{ f_row.title | escape }}</h2>
+              <p class="card-text">{{ f_row.excerpt | escape }}</p>
+              <span class="feature-cta">{{ f_row.cta | default: 'View resource →' | escape }}</span>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif%}
+    </div>
+  </section>
+
+  <!-- home page article -->
+  <section class="home-page-article">
+    <div class="container">
+      <article>
+        {{ content }}
+      </article>
+    </div>
+  </section>
+</div>

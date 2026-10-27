@@ -65,7 +65,7 @@ google:
 analytics:
   provider: "google-gtag" # false (default), "google-gtag", "custom"
   google:
-    tracking_id: "G-V16S8HM7DW"
+    tracking_id: "G-CBH3GM9SDY"
     anonymize_ip: false
 
 # Reading Files
